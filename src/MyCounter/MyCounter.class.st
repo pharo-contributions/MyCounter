@@ -14,9 +14,22 @@ Class {
 	#package : 'MyCounter'
 }
 
+{ #category : 'initialization' }
+MyCounter class >> withValue: anInteger [ 
+
+	^ self new
+		count: anInteger;
+		yourself
+]
+
 { #category : 'accessing' }
 MyCounter >> count [
 	^ count
+]
+
+{ #category : 'accessing' }
+MyCounter >> count: anInteger [ 
+	count := anInteger
 ]
 
 { #category : 'initialization' }
