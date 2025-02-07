@@ -6,6 +6,14 @@ Class {
 }
 
 { #category : 'tests' }
+MyCounterTest >> testCreation [
+
+	| counter |
+	counter := MyCounter withValue: 5.
+	self assert: counter count equals: 5
+]
+
+{ #category : 'tests' }
 MyCounterTest >> testDecrement [ 
 
 	| counter |
